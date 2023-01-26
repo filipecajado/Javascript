@@ -1,0 +1,90 @@
+ANOTAÇÕES CURSO JAVASCRIPT
+
+> + CONCATENAÇÃO/ADIÇÃO
+
+> TRANSFORMAR STRING EM NUMBER.
+ - Number(n) // Transforma para o tipo de n´´umero interpretado
+ - Number.parseInt(n) //  Transforma para numero inteiro
+ - Number.parseFloat(n) // Transforma para numero Flutuante
+
+
+> TRANSFORMAR NUMBER EM STRING.
+ - String(n)
+ - n.tostring()
+
+> FORMATAÇÃO DE TEXTO.
+- 'blalala ' + ex + ' balbalba' // Usa cocatenação
+- `balbala ${ex} balblabl ` // Tempalte String Tem que ser utilizado Crase para utilizar esse tipo de formatação
+var s = 'Javascript'
+- s.length // conta os caracteres da string
+- s.toUpperCase() // Tudo para Maiusculo
+- s.toLowerCase() // Tudo para Minuscuo
+
+> FORMATAÇÃO DE NUMBER.
+var n1 = 1545.5
+- n1.toFixed(2) '1545.50' // Adiciona casa decimal apos ponto
+- n1.replace('.' , ',') '1545,50 //Faz o replace de um elemento por outro
+- n1 toLocaleString('pt-BR', {style: 'currency', currency: 'BRL}) 'R$ 1545.50' //Retorna o valor em moeda
+
+> OPERADORES.
+- % resto da divisao
+- ** potência
+
+> RELACIONAIS.
+5 == '5' True // verifica se há igualdade no valor
+5 == 5 True 
+5 === '5' False // Verifica se há igualdade no tipo do valor
+5 === 5 True
+
+> LÓGICOS.
+- ! Negação
+- && Conjunção // E 
+- || Disjunção // Ou 
+
+> Ternário
+ - ?:
+ var média = 5.5
+
+ media > 4 ? 'Aprovado' : 'Reprovado'
+
+ > DOM
+ - Document Object Model
+ - Conjunto de objetos dentro do navegdor que da acessos internos dentro no navegadro
+
+> ARVORE DOM
+
+
+*Escopo de variaveis > *
+Local onde a variavel está declarada,
+ex: se a variável está declarada em uma função ela somente vai estar disponivel para aquela função.
+
+se a variavel está declarada em um escopo global a varaivel ira servir para toda aplicação
+
+*Diferença entre var, const e let>*
+
+
+*var:*
+> Aceita ser redecladara facilmente e pegando o valor da ultiam declaração ex: 
+var nome = 'filipe'
+var nome = 'joao'
+nome impresso = 'joao'
+
+> Hoisting: uma variavel declarada no fim do seu codigo o hoisting interpreta e joga sua variavel para o topo mesmo sendo declarada embaixo ex:
+console.log(nome);
+var nome = 'filipe'
+será impresso = 'filipe' 
+
+
+*let:*
+> Não pode ser redeclarada
+> Uma vez declarada voce pode alterar o valor da variavel.
+> Hoisting : Nescessário declarar na ordem correta.
+
+*const:*
+> Não é possivel reapontar o valor de uma variavel const
+> Possivel iniciar a const apontatndo para um objeto e depois alterar a propriedade daquele objeto.
+> Força a voce criar uma nova variavel para atribuir um novo valor.
+
+
+
+

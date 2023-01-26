@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        article{
+            font: normal 18pt Arial;
+        }
+    
+        #button{
+            border: none;
+            color: white;
+            background: blue;
+            padding: 7px;
+            border-radius: 10px;
+        }
+       
+        #pais{
+            border: none;
+            background: rgba(128, 128, 128, 0.829);
+            padding: 7px;
+            color: white;
+            border-radius: 10px;
+        }
+        #pais::placeholder {
+            color: white;
+        }
+
+        div{
+            margin-top: 20px;
+            background: rgba(7, 40, 187, 0.438);
+            width: 300px;
+            height: 200px;
+            box-shadow: 4px 5px rgba(0, 0, 0, 0.603);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <h1>Nacionalidade</h1>
+           Onde você vive? <input type="text" name="pais" id="pais" placeholder="EX: África">
+            <input id='button' type="button" value="Enviar" onclick="responder()" >
+            <div id="res">Resultado</div>
+        </article>
+    </section>
+
+
+    <script>
+        
+        function responder() {
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+
+            
+           
+            res.innerHTML = `<p>Você vive em ${pais.value} </p></br>`
+            if (pais.value == 'Brasil'){
+                res.innerHTML += '</br><p>Você é Brasileiro</p>'
+            }
+            else {
+                res.innerHTML += '<p>Você é Estrangeiro</p>'
+            }
+        }
+
+    </script>
+</body>
+</html>
