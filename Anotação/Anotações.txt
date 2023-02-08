@@ -87,4 +87,20 @@ será impresso = 'filipe'
 
 
 
+Um Array/ Vetor
+- uma variavale com varios elementos
 
+Acresenta na posição 3 um valor
+num[3] = 5
+
+acresenta valores
+num.push(7)
+
+Conta a quantidade de elementos em uma Array
+num.length
+
+Deixa a su Array em ORdem Crescente
+num.sort
+
+buscar posição de um valor
+num.indexOf(5)
